@@ -10,6 +10,8 @@ public class Activity_news extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
+    private String[] mDataset;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +23,7 @@ public class Activity_news extends AppCompatActivity {
         layoutManager=new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        adapter=new MyAdapter(myDataset);
+        adapter=new MyAdapter(mDataset);
         recyclerView.setAdapter(adapter);
     }
 }
