@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Button;
 
 public class Activity_news extends AppCompatActivity {
     private RecyclerView recyclerView;
@@ -25,7 +26,14 @@ public class Activity_news extends AppCompatActivity {
 
         adapter=new MyAdapter(mDataset);
         recyclerView.setAdapter(adapter);
+
+        Button button1=(Button) findViewById(R.id.button1);
+        Button button2=(Button) findViewById(R.id.button2);
+        Button button3=(Button) findViewById(R.id.button3);
+
+
     }
+
 }
 
 
